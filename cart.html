@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cart - Malaiyamman Traders</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-left">
+    <a href="index.html"><img src="logo.png" alt="Malaiyamman Traders Logo" class="logo"></a>
+  </div>
+  <div class="header-center">
+    <h1>Malaiyamman Traders</h1>
+    <p>Crackers & Fireworks</p>
+  </div>
+  <div class="header-right">
+    <a href="tel:+919843611870" class="contact-icon"><i class="fa-solid fa-mobile-screen-button"></i></a>
+    <a href="https://facebook.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://instagram.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
+    <div id="cart-summary" class="cart-summary">🛍️ View Cart</div>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href='#'>Categories</a>
+      <ul>
+        <li><a href='2026newarrival.html'>2026 NEW ARRIVAL</a></li>
+        <li><a href='bundledblasters.html'>BUNDLED BLASTERS</a></li>
+        <li><a href='fountains.html'>Fountains</a></li>
+        <li><a href='giftbox.html'>GIFT BOX</a></li>
+        <li><a href='gunbullets.html'>GUN BULLETS</a></li>
+        <li><a href='guns.html'>GUNS</a></li>
+        <li><a href='kidsarrivels.html'>KIDS ARRIVELS</a></li>
+        <li><a href='matchbox.html'>MATCH BOX</a></li>
+        <li><a href='paperblaster.html'>PAPER BLASTER</a></li>
+        <li><a href='shots.html'>SHOTS</a></li>
+        <li><a href='soundblasters.html'>Sound Blasters</a></li>
+        <li><a href='sparkler.html'>Sparkler</a></li>
+        <li><a href='wirecrackers&rockets.html'>WIRE CRACKERS & ROCKETS</a></li>
+        <li><a href='wheelers.html'>Wheelers</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<section>
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button type="button" id="clearCartBtn" class="clear-btn">
+      <i class="fa fa-trash"></i> Clear Cart
+    </button>
+  </div>
+
+  <table id="cart-table" class="cart-table">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Size/Variant</th>
+        <th>Selling Price (₹)</th>
+        <th>Quantity</th>
+        <th>Subtotal (₹)</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="cart-items"></tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5"><strong>Total</strong></td>
+        <td id="cart-total">₹0.00</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h3>Customer Details</h3>
+  <form id="orderForm" class="order-form">
+    <div class="form-row">
+      <i class="fa fa-user"></i>
+      <input type="text" id="name" placeholder="Full Name" required>
+    </div>
+    <div class="form-row" style="display:none;">
+      <i class="fa fa-home"></i>
+      <input type="text" id="address" placeholder="Street Address" >
+    </div>
+    <div class="form-row">
+      <i class="fa fa-city"></i>
+      <input type="text" id="city" placeholder="City" required>
+      <i class="fa fa-flag"></i>
+      <input type="text" id="state" placeholder="State" required>
+    </div>
+    <div class="form-row">
+      <i class="fa fa-map-pin"></i>
+      <input type="text" id="zip" name="zip" placeholder="Zip Code" pattern="[0-9]*" maxlength="6" required>
+      <i class="fa fa-phone"></i>
+	<input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10" required>
+    </div>
+    <div class="form-row">
+      <button type="submit" class="place-order-btn">Place Order</button>
+    </div>
+  </form>
+</section>
+
+
+<footer class="site-footer">
+  <p>&copy; 2026 Malaiyamman Traders. All rights reserved.</p>
+</footer>
+
+<script src="style.js"></script>
+<script src="script.js"></script>
+<div id="toast-container"></div>
+
+</body>
+</html>
