@@ -132,7 +132,7 @@ const totalCell = document.getElementById(`total${idSuffix}`);
       totalCell.innerText = (item.qty * item.price).toFixed(2);
     }
   });
-  //updateGrandTotal();
+  updateGrandTotal();
   updateCartDisplay();
 }
 
@@ -146,7 +146,7 @@ function updateQty(name, variant, change) {
         if (isNaN(qty) || qty < 0) qty = 0;
         qtyInput.value = qty;
         totalCell.innerText = (qty * price).toFixed(2);
-        //updateGrandTotal();
+        updateGrandTotal();
         updateCartDisplay();
     }
     function validateQty(input, name, variant) {
@@ -166,7 +166,7 @@ function updateQty(name, variant, change) {
       }
       let totalCell = document.getElementById("total-" + safeName + "-" + safeVariant);
         totalCell.innerText = (parseInt(val) * price).toFixed(2);
-        //updateGrandTotal();
+        updateGrandTotal();
 
 
         // Find item in cart
@@ -236,31 +236,31 @@ function exportOrderToPDF()
       exportOrderToPDF(details, cart);
 }
 
-//     function updateGrandTotal() {
-//     let totals = document.querySelectorAll("[id^='total-']");
-//     let grand = 0;
-//     let products = 0;
-//     let items = 0;
+    function updateGrandTotal() {
+    let totals = document.querySelectorAll("[id^='total-']");
+    let grand = 0;
+    let products = 0;
+    let items = 0;
 
-//     totals.forEach(cell => {
-//         let val = parseFloat(cell.innerText);
-//         if (!isNaN(val) && val > 0) {
-//             grand += val;
-//             products++; // count distinct product rows
-//             // get the quantity input for this row
-//             let qtyId = cell.id.replace("total-", "qty-");
-//             let qtyInput = document.getElementById(qtyId);
-//             let qtyVal = parseInt(qtyInput.value);
-//             if (!isNaN(qtyVal)) {
-//                 items += qtyVal; // sum total items across products
-//             }
-//         }
-//     });
+    totals.forEach(cell => {
+        let val = parseFloat(cell.innerText);
+        if (!isNaN(val) && val > 0) {
+            grand += val;
+            products++; // count distinct product rows
+            // get the quantity input for this row
+            let qtyId = cell.id.replace("total-", "qty-");
+            let qtyInput = document.getElementById(qtyId);
+            let qtyVal = parseInt(qtyInput.value);
+            if (!isNaN(qtyVal)) {
+                items += qtyVal; // sum total items across products
+            }
+        }
+    });
 
-//     document.getElementById("grand-total").innerText = grand.toFixed(2);
-//     document.getElementById("cart-summary").innerText =
-//         "🛍️ Place Order (" + products + " products, " + items + " items) - ₹" + grand.toFixed(2);
-// }
+    document.getElementById("grand-total").innerText = grand.toFixed(2);
+    document.getElementById("cart-summary").innerText =
+        "🛍️ Place Order (" + products + " products, " + items + " items) - ₹" + grand.toFixed(2);
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
