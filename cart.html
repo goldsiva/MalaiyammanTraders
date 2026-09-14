@@ -21,7 +21,7 @@
     <a href="tel:+919843611870" class="contact-icon"><i class="fa-solid fa-mobile-screen-button"></i></a>
     <a href="https://facebook.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
     <a href="https://instagram.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
-    <div id="cart-summary" class="cart-summary">🛍️ View Cart</div>
+    <div id="cart-summary" onclick="gotoCart()" class="cart-summary">🛍️ View Cart</div>
   </div>
 </header>
 
@@ -74,12 +74,73 @@
     <tbody id="cart-items"></tbody>
     <tfoot>
       <tr>
-        <td colspan="5"><strong>Total</strong></td>
-        <td id="cart-total">₹0.00</td>
+        <td colspan="4"><strong>Total</strong></td>
+        <td colspan="2" id="cart-total">₹0.00</td>
       </tr>
     </tfoot>
   </table>
+  <!-- <div class="row">
+  
 
+<style>
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px;
+    background: #fff;
+    border-radius: 12px;
+    border-left: 4px solid #ff9800;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.info-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(0,0,0,.12);
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff3cd;
+    color: #ff9800;
+    border-radius: 50%;
+    font-size: 21px;
+}
+
+.info-content h4 {
+    margin: 0 0 7px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.info-content p {
+    margin: 0;
+    color: #777;
+    line-height: 1.6;
+}
+</style>
+
+
+<div class="info-box">
+    <div class="info-icon">
+        <i class="fa fa-star"></i>
+    </div>
+
+    <div class="info-content">
+    <p>
+          Transport charges to be paid directly to transport service.
+Secured packing charges 50 rupees will be added to total amount.
+    </p>
+    </div>
+</div>
+
+</div> -->
   <h3>Customer Details</h3>
   <form id="orderForm" class="order-form">
     <div class="form-row">

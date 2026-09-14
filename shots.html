@@ -4,10 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <title>SHOTS - Malaiyamman Traders</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
 
 </head>
 <body>
@@ -24,16 +23,21 @@
     <a href="tel:+919843611870" class="contact-icon"><i class="fa-solid fa-mobile-screen-button"></i></a>
     <a href="https://facebook.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
     <a href="https://instagram.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
-    <div id="cart-summary" class="cart-summary">🛍️ View Cart (0) - ₹0.00</div>
+    <div id="cart-summary" class="cart-summary" onclick="gotoCart()" style="cursor:pointer;">
+      🛍️ Place Order
+    </div>
   </div>
 </header>
+<div class="open-banner">
+  <p>🕒 Our shop is open <strong>24/7 – 365 days</strong> for sale!</p>
+</div>
 
 
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
-    <li><a href="products.html">Products</a></li>
+    <li><a href="products.html"><span class="blink_text">Estimate Now</span></a></li>
     <li><a href="contact.html">Contact Us</a></li>
     <li><a href='#'>Categories</a><ul>
 <li><a href='2026newarrival.html'>2026 NEW ARRIVAL</a></li>
@@ -56,376 +60,492 @@
 
 <section>
 <h2>SHOTS Collection</h2>
-<table class="product-table sortable">
-<tr><th>Product Name</th><th>MRP</th><th>Selling Price</th><th>Description</th><th>Size/Variant</th><th>Action</th></tr>
-
+        
+    <table class="product-table sortable">
+    <tr>
+      <th>Image</th>
+      <th>Product Name</th>
+      <th>MRP</th>
+      <th>Selling Price</th>
+      <th>Content</th>
+      <th>Size/Variant</th>
+      <th>Quantity</th>
+      <th>Total</th>
+    </tr>
+    
         <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>200.0</td>
-          <td>100.0</td>
-          <td>1 Pcs Box</td>
-          <td>2 ½ Crackling</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="2 ½ Crackling"
-                    data-price="100.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
+          <td colspan="8" style="text-align:center;font-weight:bold;background:#f0f0f0;">
+            SHOTS
           </td>
         </tr>
         
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>100.0</td>
-          <td>50.0</td>
-          <td>1 Pcs Box</td>
-          <td>1 ½ Yellow</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="1 ½ Yellow"
-                    data-price="50.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>100.0</td>
-          <td>50.0</td>
-          <td>1 Pcs Box</td>
-          <td>1 ½ Red  Green</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="1 ½ Red  Green"
-                    data-price="50.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>200.0</td>
-          <td>100.0</td>
-          <td>1 Pcs Box</td>
-          <td>2 ½ Red  Green</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="2 ½ Red  Green"
-                    data-price="100.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>200.0</td>
-          <td>100.0</td>
-          <td>1 Pcs Box</td>
-          <td>2 ½ Yellow</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="2 ½ Yellow"
-                    data-price="100.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>200.0</td>
-          <td>100.0</td>
-          <td>1 Pcs Box</td>
-          <td>2 ½ White</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="2 ½ White"
-                    data-price="100.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>200.0</td>
-          <td>100.0</td>
-          <td>1 Pcs Box</td>
-          <td>2 ½ Green</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="2 ½ Green"
-                    data-price="100.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>100.0</td>
-          <td>50.0</td>
-          <td>1 Pcs Box</td>
-          <td>1 ½ Red</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="1 ½ Red"
-                    data-price="50.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>600.0</td>
-          <td>300.0</td>
-          <td>1 Pcs Box</td>
-          <td>3 ½ Red</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="3 ½ Red"
-                    data-price="300.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>200.0</td>
-          <td>100.0</td>
-          <td>1 Pcs Box</td>
-          <td>2 ½ Red</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="2 ½ Red"
-                    data-price="100.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>100.0</td>
-          <td>50.0</td>
-          <td>1 Pcs Box</td>
-          <td>1 ½ White</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="1 ½ White"
-                    data-price="50.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>600.0</td>
-          <td>300.0</td>
-          <td>1 Pcs Box</td>
-          <td>3 ½  White</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="3 ½  White"
-                    data-price="300.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>600.0</td>
-          <td>300.0</td>
-          <td>1 Pcs Box</td>
-          <td>3 ½  Crackling</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="3 ½  Crackling"
-                    data-price="300.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>100.0</td>
-          <td>50.0</td>
-          <td>1 Pcs Box</td>
-          <td>1 ½ Green</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="1 ½ Green"
-                    data-price="50.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>600.0</td>
-          <td>300.0</td>
-          <td>1 Pcs Box</td>
-          <td>3 ½ Yellow</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="3 ½ Yellow"
-                    data-price="300.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SINGLE  SHOTS</td>
-          <td>600.0</td>
-          <td>300.0</td>
-          <td>1 Pcs Box</td>
-          <td>3 ½  Red  Green</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SINGLE  SHOTS"
-                    data-variant="3 ½  Red  Green"
-                    data-price="300.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SKY DANCING  SHOTS</td>
-          <td>600.0</td>
-          <td>300.0</td>
-          <td>1 Pcs Box</td>
-          <td>15 Shot Multi Colour</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SKY DANCING  SHOTS"
-                    data-variant="15 Shot Multi Colour"
-                    data-price="300.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SKY DANCING  SHOTS</td>
-          <td>3500.0</td>
-          <td>1750.0</td>
-          <td>1 Pcs Box</td>
-          <td>120 Shots</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SKY DANCING  SHOTS"
-                    data-variant="120 Shots"
-                    data-price="1750.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SKY DANCING  SHOTS</td>
-          <td>7000.0</td>
-          <td>3500.0</td>
-          <td>1 Pcs Box</td>
-          <td>240 Shots</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SKY DANCING  SHOTS"
-                    data-variant="240 Shots"
-                    data-price="3500.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SKY DANCING  SHOTS</td>
-          <td>300.0</td>
-          <td>150.0</td>
-          <td>1 Pcs Box</td>
-          <td>12 Shots Rider</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SKY DANCING  SHOTS"
-                    data-variant="12 Shots Rider"
-                    data-price="150.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SKY DANCING  SHOTS</td>
-          <td>1800.0</td>
-          <td>900.0</td>
-          <td>1 Pcs Box</td>
-          <td>60 Shots</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SKY DANCING  SHOTS"
-                    data-variant="60 Shots"
-                    data-price="900.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>SKY DANCING  SHOTS</td>
-          <td>900.0</td>
-          <td>450.0</td>
-          <td>1 Pcs Box</td>
-          <td>30 Shots</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="SKY DANCING  SHOTS"
-                    data-variant="30 Shots"
-                    data-price="450.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        </table>
-
+            <tr>
+              <td><img src="images/SINGLE  SHOTS25 Crackling.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>200.0</td>
+              <td>100.0</td>
+              <td>1 Pcs Box</td>
+              <td>25 Crackling</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="25 Crackling" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Crackling',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-25_Crackling" type="text" value="0" data-price="100.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','25 Crackling')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="25 Crackling" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Crackling',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-25_Crackling">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS15 Yellow.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>100.0</td>
+              <td>50.0</td>
+              <td>1 Pcs Box</td>
+              <td>15 Yellow</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="15 Yellow" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 Yellow',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-15_Yellow" type="text" value="0" data-price="50.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','15 Yellow')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="15 Yellow" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 Yellow',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-15_Yellow">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS15 Red  Green.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>100.0</td>
+              <td>50.0</td>
+              <td>1 Pcs Box</td>
+              <td>15 Red  Green</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="15 Red  Green" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 Red  Green',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-15_Red__Green" type="text" value="0" data-price="50.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','15 Red  Green')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="15 Red  Green" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 Red  Green',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-15_Red__Green">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS25 Red  Green.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>200.0</td>
+              <td>100.0</td>
+              <td>1 Pcs Box</td>
+              <td>25 Red  Green</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="25 Red  Green" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Red  Green',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-25_Red__Green" type="text" value="0" data-price="100.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','25 Red  Green')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="25 Red  Green" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Red  Green',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-25_Red__Green">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS25 Yellow.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>200.0</td>
+              <td>100.0</td>
+              <td>1 Pcs Box</td>
+              <td>25 Yellow</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="25 Yellow" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Yellow',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-25_Yellow" type="text" value="0" data-price="100.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','25 Yellow')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="25 Yellow" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Yellow',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-25_Yellow">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS25 White.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>200.0</td>
+              <td>100.0</td>
+              <td>1 Pcs Box</td>
+              <td>25 White</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="25 White" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 White',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-25_White" type="text" value="0" data-price="100.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','25 White')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="25 White" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 White',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-25_White">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS25 Green.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>200.0</td>
+              <td>100.0</td>
+              <td>1 Pcs Box</td>
+              <td>25 Green</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="25 Green" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Green',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-25_Green" type="text" value="0" data-price="100.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','25 Green')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="25 Green" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Green',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-25_Green">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS15 Red.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>100.0</td>
+              <td>50.0</td>
+              <td>1 Pcs Box</td>
+              <td>15 Red</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="15 Red" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 Red',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-15_Red" type="text" value="0" data-price="50.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','15 Red')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="15 Red" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 Red',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-15_Red">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS35 Red.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>600.0</td>
+              <td>300.0</td>
+              <td>1 Pcs Box</td>
+              <td>35 Red</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="35 Red" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35 Red',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-35_Red" type="text" value="0" data-price="300.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','35 Red')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="35 Red" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35 Red',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-35_Red">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS25 Red.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>200.0</td>
+              <td>100.0</td>
+              <td>1 Pcs Box</td>
+              <td>25 Red</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="25 Red" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Red',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-25_Red" type="text" value="0" data-price="100.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','25 Red')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="25 Red" data-price="100.0"
+                    onclick="updateQty('SINGLE  SHOTS','25 Red',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-25_Red">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS15 White.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>100.0</td>
+              <td>50.0</td>
+              <td>1 Pcs Box</td>
+              <td>15 White</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="15 White" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 White',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-15_White" type="text" value="0" data-price="50.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','15 White')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="15 White" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 White',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-15_White">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS35  White.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>600.0</td>
+              <td>300.0</td>
+              <td>1 Pcs Box</td>
+              <td>35  White</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="35  White" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35  White',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-35__White" type="text" value="0" data-price="300.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','35  White')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="35  White" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35  White',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-35__White">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS35  Crackling.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>600.0</td>
+              <td>300.0</td>
+              <td>1 Pcs Box</td>
+              <td>35  Crackling</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="35  Crackling" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35  Crackling',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-35__Crackling" type="text" value="0" data-price="300.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','35  Crackling')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="35  Crackling" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35  Crackling',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-35__Crackling">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS15 Green.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>100.0</td>
+              <td>50.0</td>
+              <td>1 Pcs Box</td>
+              <td>15 Green</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="15 Green" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 Green',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-15_Green" type="text" value="0" data-price="50.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','15 Green')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="15 Green" data-price="50.0"
+                    onclick="updateQty('SINGLE  SHOTS','15 Green',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-15_Green">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS35 Yellow.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>600.0</td>
+              <td>300.0</td>
+              <td>1 Pcs Box</td>
+              <td>35 Yellow</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="35 Yellow" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35 Yellow',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-35_Yellow" type="text" value="0" data-price="300.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','35 Yellow')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="35 Yellow" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35 Yellow',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-35_Yellow">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SINGLE  SHOTS35  Red  Green.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SINGLE  SHOTS</td>
+              <td>600.0</td>
+              <td>300.0</td>
+              <td>1 Pcs Box</td>
+              <td>35  Red  Green</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SINGLE  SHOTS" data-variant="35  Red  Green" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35  Red  Green',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SINGLE__SHOTS-35__Red__Green" type="text" value="0" data-price="300.0"
+                       oninput="validateQty(this,'SINGLE  SHOTS','35  Red  Green')" >
+                <button class="add add-to-cart" data-name="SINGLE  SHOTS" data-variant="35  Red  Green" data-price="300.0"
+                    onclick="updateQty('SINGLE  SHOTS','35  Red  Green',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SINGLE__SHOTS-35__Red__Green">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SKY DANCING  SHOTS15 Shot Multi Colour.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SKY DANCING  SHOTS</td>
+              <td>600.0</td>
+              <td>300.0</td>
+              <td>1 Pcs Box</td>
+              <td>15 Shot Multi Colour</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SKY DANCING  SHOTS" data-variant="15 Shot Multi Colour" data-price="300.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','15 Shot Multi Colour',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SKY_DANCING__SHOTS-15_Shot_Multi_Colour" type="text" value="0" data-price="300.0"
+                       oninput="validateQty(this,'SKY DANCING  SHOTS','15 Shot Multi Colour')" >
+                <button class="add add-to-cart" data-name="SKY DANCING  SHOTS" data-variant="15 Shot Multi Colour" data-price="300.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','15 Shot Multi Colour',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SKY_DANCING__SHOTS-15_Shot_Multi_Colour">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SKY DANCING  SHOTS120 Shots.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SKY DANCING  SHOTS</td>
+              <td>3500.0</td>
+              <td>1750.0</td>
+              <td>1 Pcs Box</td>
+              <td>120 Shots</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SKY DANCING  SHOTS" data-variant="120 Shots" data-price="1750.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','120 Shots',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SKY_DANCING__SHOTS-120_Shots" type="text" value="0" data-price="1750.0"
+                       oninput="validateQty(this,'SKY DANCING  SHOTS','120 Shots')" >
+                <button class="add add-to-cart" data-name="SKY DANCING  SHOTS" data-variant="120 Shots" data-price="1750.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','120 Shots',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SKY_DANCING__SHOTS-120_Shots">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SKY DANCING  SHOTS240 Shots.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SKY DANCING  SHOTS</td>
+              <td>7000.0</td>
+              <td>3500.0</td>
+              <td>1 Pcs Box</td>
+              <td>240 Shots</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SKY DANCING  SHOTS" data-variant="240 Shots" data-price="3500.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','240 Shots',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SKY_DANCING__SHOTS-240_Shots" type="text" value="0" data-price="3500.0"
+                       oninput="validateQty(this,'SKY DANCING  SHOTS','240 Shots')" >
+                <button class="add add-to-cart" data-name="SKY DANCING  SHOTS" data-variant="240 Shots" data-price="3500.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','240 Shots',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SKY_DANCING__SHOTS-240_Shots">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SKY DANCING  SHOTS12 Shots Rider.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SKY DANCING  SHOTS</td>
+              <td>300.0</td>
+              <td>150.0</td>
+              <td>1 Pcs Box</td>
+              <td>12 Shots Rider</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SKY DANCING  SHOTS" data-variant="12 Shots Rider" data-price="150.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','12 Shots Rider',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SKY_DANCING__SHOTS-12_Shots_Rider" type="text" value="0" data-price="150.0"
+                       oninput="validateQty(this,'SKY DANCING  SHOTS','12 Shots Rider')" >
+                <button class="add add-to-cart" data-name="SKY DANCING  SHOTS" data-variant="12 Shots Rider" data-price="150.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','12 Shots Rider',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SKY_DANCING__SHOTS-12_Shots_Rider">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SKY DANCING  SHOTS60 Shots.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SKY DANCING  SHOTS</td>
+              <td>1800.0</td>
+              <td>900.0</td>
+              <td>1 Pcs Box</td>
+              <td>60 Shots</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SKY DANCING  SHOTS" data-variant="60 Shots" data-price="900.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','60 Shots',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SKY_DANCING__SHOTS-60_Shots" type="text" value="0" data-price="900.0"
+                       oninput="validateQty(this,'SKY DANCING  SHOTS','60 Shots')" >
+                <button class="add add-to-cart" data-name="SKY DANCING  SHOTS" data-variant="60 Shots" data-price="900.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','60 Shots',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SKY_DANCING__SHOTS-60_Shots">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/SKY DANCING  SHOTS30 Shots.png" style="max-width:30px; max-height:40px;"></td>
+              <td>SKY DANCING  SHOTS</td>
+              <td>900.0</td>
+              <td>450.0</td>
+              <td>1 Pcs Box</td>
+              <td>30 Shots</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="SKY DANCING  SHOTS" data-variant="30 Shots" data-price="450.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','30 Shots',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-SKY_DANCING__SHOTS-30_Shots" type="text" value="0" data-price="450.0"
+                       oninput="validateQty(this,'SKY DANCING  SHOTS','30 Shots')" >
+                <button class="add add-to-cart" data-name="SKY DANCING  SHOTS" data-variant="30 Shots" data-price="450.0"
+                    onclick="updateQty('SKY DANCING  SHOTS','30 Shots',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-SKY_DANCING__SHOTS-30_Shots">0.00</td>
+            </tr>
+            
+    <tfoot>
+      <tr>
+        <td colspan="7" style="text-align:right;font-weight:bold;">Grand Total:</td>
+        <td id="grand-total">0.00</td>
+      </tr>
+    </tfoot>
+    </table>
+    
 </section>
 
-<footer class="site-footer">
-  <div class="footer-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
-  <p>&copy; 2026 Malaiyamman Traders. All rights reserved.</p>
-  <div class="footer-icons">
-    <a href="tel:+919843611870" class="contact-icon"><i class="fa-solid fa-mobile-screen-button"></i></a>
-    <a href="https://facebook.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://instagram.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
+<!-- Footer -->
+  <footer class="site-footer footbg footpad footlink">
+  <div class="container">
+    <div class="row">
+      
+      <!-- About -->
+      <div class="col-lg-4 col-md-4">
+        <h1 class="gilroy pb-2 heading2 clr text-white">Malaiyamman Traders</h1>
+        <p class="roboto text-white smallfnt">
+          Premium Crackers & Fireworks for every occasion. Wide range including Sparklers, Rockets, Flower Pots, and more.
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-lg-4 col-md-4">
+        <h1 class="gilroy pb-3 text-white heading2">Quick Links</h1>
+        <ul class="fullpad">
+          <li class="roboto pb-2"><a href="index.html" class="text-white clr"><i class="fa fa-angle-right"></i> Home</a></li>
+          <li class="roboto pb-2"><a href="about.html" class="text-white clr"><i class="fa fa-angle-right"></i> About</a></li>
+          <li class="roboto pb-2"><a href="products.html" class="text-white clr"><i class="fa fa-angle-right"></i> Products</a></li>
+          <li class="roboto pb-2"><a href="contact.html" class="text-white clr"><i class="fa fa-angle-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-4">
+        <h1 class="gilroy heading2 pb-2 clr text-white">Contact Us</h1>
+        <ul class="fullpad">
+          <li class="roboto pb-2">
+            <i class="fa fa-location-arrow text-white"></i>
+            <div class="text1 text-white">
+             1/4728/6, Rosalpatti, Thanga Mani Colony, Rosalpatti, Tamil Nadu 626001
+            </div>
+          </li>
+          <li class="roboto pb-2">
+            <i class="fa fa-whatsapp text-white"></i>
+            <div class="text1 para">
+              <a href="https://wa.me/919843611870" class="text-white">+91 9843611870</a>
+            </div>
+          </li>
+          <li class="roboto pb-2">
+            <i class="fa fa-envelope text-white"></i>
+            <div class="text1 para">
+              <a href="mailto:malaiyammantraders@gmail.com" class="text-white">malaiyammantraders@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </div> <!-- end row -->
+    
+    <!-- Bottom row -->
+    <div class="row">
+      <div class="col-md-6 pt-4">
+        <p class="roboto text-white">© 2026 Malaiyamman Traders – All rights reserved</p>
+      </div>
+      <div class="col-md-6 text-right pt-4" style="text-align: right;">
+        <i>Designed by <a href="#" target="_blank" style="color:#9e9e9e; text-decoration:none;">Malaiyamman Traders</a></i>
+      </div>
+    </div>
+    
   </div>
 </footer>
 

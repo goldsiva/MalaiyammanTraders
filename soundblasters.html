@@ -4,10 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Sound Blasters - Malaiyamman Traders</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
 
 </head>
 <body>
@@ -24,16 +23,21 @@
     <a href="tel:+919843611870" class="contact-icon"><i class="fa-solid fa-mobile-screen-button"></i></a>
     <a href="https://facebook.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
     <a href="https://instagram.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
-    <div id="cart-summary" class="cart-summary">🛍️ View Cart (0) - ₹0.00</div>
+    <div id="cart-summary" class="cart-summary" onclick="gotoCart()" style="cursor:pointer;">
+      🛍️ Place Order
+    </div>
   </div>
 </header>
+<div class="open-banner">
+  <p>🕒 Our shop is open <strong>24/7 – 365 days</strong> for sale!</p>
+</div>
 
 
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
-    <li><a href="products.html">Products</a></li>
+    <li><a href="products.html"><span class="blink_text">Estimate Now</span></a></li>
     <li><a href="contact.html">Contact Us</a></li>
     <li><a href='#'>Categories</a><ul>
 <li><a href='2026newarrival.html'>2026 NEW ARRIVAL</a></li>
@@ -56,232 +60,330 @@
 
 <section>
 <h2>Sound Blasters Collection</h2>
-<table class="product-table sortable">
-<tr><th>Product Name</th><th>MRP</th><th>Selling Price</th><th>Description</th><th>Size/Variant</th><th>Action</th></tr>
-
+        
+    <table class="product-table sortable">
+    <tr>
+      <th>Image</th>
+      <th>Product Name</th>
+      <th>MRP</th>
+      <th>Selling Price</th>
+      <th>Content</th>
+      <th>Size/Variant</th>
+      <th>Quantity</th>
+      <th>Total</th>
+    </tr>
+    
         <tr>
-          <td>Hydro Bomb</td>
-          <td>150.0</td>
-          <td>75.0</td>
-          <td>10 Pcs Box</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Hydro Bomb"
-                    data-variant=""
-                    data-price="75.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
+          <td colspan="8" style="text-align:center;font-weight:bold;background:#f0f0f0;">
+            Sound Blasters
           </td>
         </tr>
         
-        <tr>
-          <td>King of King Bomb</td>
-          <td>200.0</td>
-          <td>100.0</td>
-          <td>10 Pcs Box</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="King of King Bomb"
-                    data-variant=""
-                    data-price="100.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Kuruvi</td>
-          <td>20.0</td>
-          <td>10.0</td>
-          <td>1 Pkt (5pcs)</td>
-          <td>2 inch</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Kuruvi"
-                    data-variant="2 inch"
-                    data-price="10.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Kuruvi</td>
-          <td>50.0</td>
-          <td>25.0</td>
-          <td>1 Pkt (5pcs)</td>
-          <td>45 inch</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Kuruvi"
-                    data-variant="45 inch"
-                    data-price="25.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Kuruvi</td>
-          <td>30.0</td>
-          <td>15.0</td>
-          <td>1 Pkt (5pcs)</td>
-          <td>3 inch</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Kuruvi"
-                    data-variant="3 inch"
-                    data-price="15.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Kuruvi</td>
-          <td>40.0</td>
-          <td>20.0</td>
-          <td>1 Pkt (5pcs)</td>
-          <td>4 inch</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Kuruvi"
-                    data-variant="4 inch"
-                    data-price="20.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Mega Flash  Bomb</td>
-          <td>600.0</td>
-          <td>400.0</td>
-          <td>10 Pcs Box</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Mega Flash  Bomb"
-                    data-variant=""
-                    data-price="400.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Atom Bomb</td>
-          <td>100.0</td>
-          <td>50.0</td>
-          <td>10 Pcs Box</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Atom Bomb"
-                    data-variant=""
-                    data-price="50.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Bullet Bomb</td>
-          <td>50.0</td>
-          <td>25.0</td>
-          <td>10 Pcs Box</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Bullet Bomb"
-                    data-variant=""
-                    data-price="25.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Classic  Bomb</td>
-          <td>300.0</td>
-          <td>150.0</td>
-          <td>10 Pcs Box</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Classic  Bomb"
-                    data-variant=""
-                    data-price="150.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Deluxe</td>
-          <td>80.0</td>
-          <td>40.0</td>
-          <td>1 Pkt (5pcs)</td>
-          <td>6 inch Gold Super</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Deluxe"
-                    data-variant="6 inch Gold Super"
-                    data-price="40.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Deluxe</td>
-          <td>70.0</td>
-          <td>35.0</td>
-          <td>1 Pkt (5pcs)</td>
-          <td>6 inch Super</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Deluxe"
-                    data-variant="6 inch Super"
-                    data-price="35.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Deluxe</td>
-          <td>60.0</td>
-          <td>30.0</td>
-          <td>1 Pkt (5pcs)</td>
-          <td>5 inch</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Deluxe"
-                    data-variant="5 inch"
-                    data-price="30.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        </table>
-
+            <tr>
+              <td><img src="images/Hydro Bomb.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Hydro Bomb</td>
+              <td>150.0</td>
+              <td>75.0</td>
+              <td>10 Pcs Box</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Hydro Bomb" data-variant="" data-price="75.0"
+                    onclick="updateQty('Hydro Bomb','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Hydro_Bomb-" type="text" value="0" data-price="75.0"
+                       oninput="validateQty(this,'Hydro Bomb','')" >
+                <button class="add add-to-cart" data-name="Hydro Bomb" data-variant="" data-price="75.0"
+                    onclick="updateQty('Hydro Bomb','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Hydro_Bomb-">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/King of King Bomb.png" style="max-width:30px; max-height:40px;"></td>
+              <td>King of King Bomb</td>
+              <td>200.0</td>
+              <td>100.0</td>
+              <td>10 Pcs Box</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="King of King Bomb" data-variant="" data-price="100.0"
+                    onclick="updateQty('King of King Bomb','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-King_of_King_Bomb-" type="text" value="0" data-price="100.0"
+                       oninput="validateQty(this,'King of King Bomb','')" >
+                <button class="add add-to-cart" data-name="King of King Bomb" data-variant="" data-price="100.0"
+                    onclick="updateQty('King of King Bomb','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-King_of_King_Bomb-">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Kuruvi2 inch.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Kuruvi</td>
+              <td>20.0</td>
+              <td>10.0</td>
+              <td>1 Pkt (5pcs)</td>
+              <td>2 inch</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Kuruvi" data-variant="2 inch" data-price="10.0"
+                    onclick="updateQty('Kuruvi','2 inch',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Kuruvi-2_inch" type="text" value="0" data-price="10.0"
+                       oninput="validateQty(this,'Kuruvi','2 inch')" >
+                <button class="add add-to-cart" data-name="Kuruvi" data-variant="2 inch" data-price="10.0"
+                    onclick="updateQty('Kuruvi','2 inch',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Kuruvi-2_inch">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Kuruvi45 inch.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Kuruvi</td>
+              <td>50.0</td>
+              <td>25.0</td>
+              <td>1 Pkt (5pcs)</td>
+              <td>45 inch</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Kuruvi" data-variant="45 inch" data-price="25.0"
+                    onclick="updateQty('Kuruvi','45 inch',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Kuruvi-45_inch" type="text" value="0" data-price="25.0"
+                       oninput="validateQty(this,'Kuruvi','45 inch')" >
+                <button class="add add-to-cart" data-name="Kuruvi" data-variant="45 inch" data-price="25.0"
+                    onclick="updateQty('Kuruvi','45 inch',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Kuruvi-45_inch">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Kuruvi3 inch.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Kuruvi</td>
+              <td>30.0</td>
+              <td>15.0</td>
+              <td>1 Pkt (5pcs)</td>
+              <td>3 inch</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Kuruvi" data-variant="3 inch" data-price="15.0"
+                    onclick="updateQty('Kuruvi','3 inch',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Kuruvi-3_inch" type="text" value="0" data-price="15.0"
+                       oninput="validateQty(this,'Kuruvi','3 inch')" >
+                <button class="add add-to-cart" data-name="Kuruvi" data-variant="3 inch" data-price="15.0"
+                    onclick="updateQty('Kuruvi','3 inch',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Kuruvi-3_inch">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Kuruvi4 inch.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Kuruvi</td>
+              <td>40.0</td>
+              <td>20.0</td>
+              <td>1 Pkt (5pcs)</td>
+              <td>4 inch</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Kuruvi" data-variant="4 inch" data-price="20.0"
+                    onclick="updateQty('Kuruvi','4 inch',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Kuruvi-4_inch" type="text" value="0" data-price="20.0"
+                       oninput="validateQty(this,'Kuruvi','4 inch')" >
+                <button class="add add-to-cart" data-name="Kuruvi" data-variant="4 inch" data-price="20.0"
+                    onclick="updateQty('Kuruvi','4 inch',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Kuruvi-4_inch">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Mega Flash  Bomb.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Mega Flash  Bomb</td>
+              <td>600.0</td>
+              <td>400.0</td>
+              <td>10 Pcs Box</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Mega Flash  Bomb" data-variant="" data-price="400.0"
+                    onclick="updateQty('Mega Flash  Bomb','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Mega_Flash__Bomb-" type="text" value="0" data-price="400.0"
+                       oninput="validateQty(this,'Mega Flash  Bomb','')" >
+                <button class="add add-to-cart" data-name="Mega Flash  Bomb" data-variant="" data-price="400.0"
+                    onclick="updateQty('Mega Flash  Bomb','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Mega_Flash__Bomb-">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Atom Bomb.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Atom Bomb</td>
+              <td>100.0</td>
+              <td>50.0</td>
+              <td>10 Pcs Box</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Atom Bomb" data-variant="" data-price="50.0"
+                    onclick="updateQty('Atom Bomb','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Atom_Bomb-" type="text" value="0" data-price="50.0"
+                       oninput="validateQty(this,'Atom Bomb','')" >
+                <button class="add add-to-cart" data-name="Atom Bomb" data-variant="" data-price="50.0"
+                    onclick="updateQty('Atom Bomb','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Atom_Bomb-">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Bullet Bomb.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Bullet Bomb</td>
+              <td>50.0</td>
+              <td>25.0</td>
+              <td>10 Pcs Box</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Bullet Bomb" data-variant="" data-price="25.0"
+                    onclick="updateQty('Bullet Bomb','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Bullet_Bomb-" type="text" value="0" data-price="25.0"
+                       oninput="validateQty(this,'Bullet Bomb','')" >
+                <button class="add add-to-cart" data-name="Bullet Bomb" data-variant="" data-price="25.0"
+                    onclick="updateQty('Bullet Bomb','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Bullet_Bomb-">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Classic  Bomb.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Classic  Bomb</td>
+              <td>300.0</td>
+              <td>150.0</td>
+              <td>10 Pcs Box</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Classic  Bomb" data-variant="" data-price="150.0"
+                    onclick="updateQty('Classic  Bomb','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Classic__Bomb-" type="text" value="0" data-price="150.0"
+                       oninput="validateQty(this,'Classic  Bomb','')" >
+                <button class="add add-to-cart" data-name="Classic  Bomb" data-variant="" data-price="150.0"
+                    onclick="updateQty('Classic  Bomb','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Classic__Bomb-">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Deluxe6 inch Gold Super.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Deluxe</td>
+              <td>80.0</td>
+              <td>40.0</td>
+              <td>1 Pkt (5pcs)</td>
+              <td>6 inch Gold Super</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Deluxe" data-variant="6 inch Gold Super" data-price="40.0"
+                    onclick="updateQty('Deluxe','6 inch Gold Super',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Deluxe-6_inch_Gold_Super" type="text" value="0" data-price="40.0"
+                       oninput="validateQty(this,'Deluxe','6 inch Gold Super')" >
+                <button class="add add-to-cart" data-name="Deluxe" data-variant="6 inch Gold Super" data-price="40.0"
+                    onclick="updateQty('Deluxe','6 inch Gold Super',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Deluxe-6_inch_Gold_Super">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Deluxe6 inch Super.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Deluxe</td>
+              <td>70.0</td>
+              <td>35.0</td>
+              <td>1 Pkt (5pcs)</td>
+              <td>6 inch Super</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Deluxe" data-variant="6 inch Super" data-price="35.0"
+                    onclick="updateQty('Deluxe','6 inch Super',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Deluxe-6_inch_Super" type="text" value="0" data-price="35.0"
+                       oninput="validateQty(this,'Deluxe','6 inch Super')" >
+                <button class="add add-to-cart" data-name="Deluxe" data-variant="6 inch Super" data-price="35.0"
+                    onclick="updateQty('Deluxe','6 inch Super',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Deluxe-6_inch_Super">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Deluxe5 inch.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Deluxe</td>
+              <td>60.0</td>
+              <td>30.0</td>
+              <td>1 Pkt (5pcs)</td>
+              <td>5 inch</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Deluxe" data-variant="5 inch" data-price="30.0"
+                    onclick="updateQty('Deluxe','5 inch',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Deluxe-5_inch" type="text" value="0" data-price="30.0"
+                       oninput="validateQty(this,'Deluxe','5 inch')" >
+                <button class="add add-to-cart" data-name="Deluxe" data-variant="5 inch" data-price="30.0"
+                    onclick="updateQty('Deluxe','5 inch',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Deluxe-5_inch">0.00</td>
+            </tr>
+            
+    <tfoot>
+      <tr>
+        <td colspan="7" style="text-align:right;font-weight:bold;">Grand Total:</td>
+        <td id="grand-total">0.00</td>
+      </tr>
+    </tfoot>
+    </table>
+    
 </section>
 
-<footer class="site-footer">
-  <div class="footer-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
-  <p>&copy; 2026 Malaiyamman Traders. All rights reserved.</p>
-  <div class="footer-icons">
-    <a href="tel:+919843611870" class="contact-icon"><i class="fa-solid fa-mobile-screen-button"></i></a>
-    <a href="https://facebook.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://instagram.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
+<!-- Footer -->
+  <footer class="site-footer footbg footpad footlink">
+  <div class="container">
+    <div class="row">
+      
+      <!-- About -->
+      <div class="col-lg-4 col-md-4">
+        <h1 class="gilroy pb-2 heading2 clr text-white">Malaiyamman Traders</h1>
+        <p class="roboto text-white smallfnt">
+          Premium Crackers & Fireworks for every occasion. Wide range including Sparklers, Rockets, Flower Pots, and more.
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-lg-4 col-md-4">
+        <h1 class="gilroy pb-3 text-white heading2">Quick Links</h1>
+        <ul class="fullpad">
+          <li class="roboto pb-2"><a href="index.html" class="text-white clr"><i class="fa fa-angle-right"></i> Home</a></li>
+          <li class="roboto pb-2"><a href="about.html" class="text-white clr"><i class="fa fa-angle-right"></i> About</a></li>
+          <li class="roboto pb-2"><a href="products.html" class="text-white clr"><i class="fa fa-angle-right"></i> Products</a></li>
+          <li class="roboto pb-2"><a href="contact.html" class="text-white clr"><i class="fa fa-angle-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-4">
+        <h1 class="gilroy heading2 pb-2 clr text-white">Contact Us</h1>
+        <ul class="fullpad">
+          <li class="roboto pb-2">
+            <i class="fa fa-location-arrow text-white"></i>
+            <div class="text1 text-white">
+             1/4728/6, Rosalpatti, Thanga Mani Colony, Rosalpatti, Tamil Nadu 626001
+            </div>
+          </li>
+          <li class="roboto pb-2">
+            <i class="fa fa-whatsapp text-white"></i>
+            <div class="text1 para">
+              <a href="https://wa.me/919843611870" class="text-white">+91 9843611870</a>
+            </div>
+          </li>
+          <li class="roboto pb-2">
+            <i class="fa fa-envelope text-white"></i>
+            <div class="text1 para">
+              <a href="mailto:malaiyammantraders@gmail.com" class="text-white">malaiyammantraders@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </div> <!-- end row -->
+    
+    <!-- Bottom row -->
+    <div class="row">
+      <div class="col-md-6 pt-4">
+        <p class="roboto text-white">© 2026 Malaiyamman Traders – All rights reserved</p>
+      </div>
+      <div class="col-md-6 text-right pt-4" style="text-align: right;">
+        <i>Designed by <a href="#" target="_blank" style="color:#9e9e9e; text-decoration:none;">Malaiyamman Traders</a></i>
+      </div>
+    </div>
+    
   </div>
 </footer>
 

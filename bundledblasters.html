@@ -4,10 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <title>BUNDLED BLASTERS - Malaiyamman Traders</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
 
 </head>
 <body>
@@ -24,16 +23,21 @@
     <a href="tel:+919843611870" class="contact-icon"><i class="fa-solid fa-mobile-screen-button"></i></a>
     <a href="https://facebook.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
     <a href="https://instagram.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
-    <div id="cart-summary" class="cart-summary">🛍️ View Cart (0) - ₹0.00</div>
+    <div id="cart-summary" class="cart-summary" onclick="gotoCart()" style="cursor:pointer;">
+      🛍️ Place Order
+    </div>
   </div>
 </header>
+<div class="open-banner">
+  <p>🕒 Our shop is open <strong>24/7 – 365 days</strong> for sale!</p>
+</div>
 
 
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
-    <li><a href="products.html">Products</a></li>
+    <li><a href="products.html"><span class="blink_text">Estimate Now</span></a></li>
     <li><a href="contact.html">Contact Us</a></li>
     <li><a href='#'>Categories</a><ul>
 <li><a href='2026newarrival.html'>2026 NEW ARRIVAL</a></li>
@@ -56,152 +60,240 @@
 
 <section>
 <h2>BUNDLED BLASTERS Collection</h2>
-<table class="product-table sortable">
-<tr><th>Product Name</th><th>MRP</th><th>Selling Price</th><th>Description</th><th>Size/Variant</th><th>Action</th></tr>
-
+        
+    <table class="product-table sortable">
+    <tr>
+      <th>Image</th>
+      <th>Product Name</th>
+      <th>MRP</th>
+      <th>Selling Price</th>
+      <th>Content</th>
+      <th>Size/Variant</th>
+      <th>Quantity</th>
+      <th>Total</th>
+    </tr>
+    
         <tr>
-          <td>Wala</td>
-          <td>3000.0</td>
-          <td>1500.0</td>
-          <td>1 Pcs Box</td>
-          <td>5000</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Wala"
-                    data-variant="5000"
-                    data-price="1500.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
+          <td colspan="8" style="text-align:center;font-weight:bold;background:#f0f0f0;">
+            BUNDLED BLASTERS
           </td>
         </tr>
         
-        <tr>
-          <td>Wala</td>
-          <td>100.0</td>
-          <td>50.0</td>
-          <td>1 Pcs Box</td>
-          <td>100</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Wala"
-                    data-variant="100"
-                    data-price="50.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Wala</td>
-          <td>1400.0</td>
-          <td>700.0</td>
-          <td>1 Pcs Box</td>
-          <td>2000</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Wala"
-                    data-variant="2000"
-                    data-price="700.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Wala</td>
-          <td>700.0</td>
-          <td>350.0</td>
-          <td>1 Pcs Box</td>
-          <td>1000</td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="Wala"
-                    data-variant="1000"
-                    data-price="350.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>24 Deluxe</td>
-          <td>100.0</td>
-          <td>50.0</td>
-          <td>p1 Pcs Pkd/p</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="24 Deluxe"
-                    data-variant=""
-                    data-price="50.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>28 Chorsa</td>
-          <td>30.0</td>
-          <td>15.0</td>
-          <td>p1 Pcs Pkd/p</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="28 Chorsa"
-                    data-variant=""
-                    data-price="15.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>28 Giant</td>
-          <td>60.0</td>
-          <td>30.0</td>
-          <td>p1 Pcs Pkd/p</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="28 Giant"
-                    data-variant=""
-                    data-price="30.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>58 Giant</td>
-          <td>100.0</td>
-          <td>50.0</td>
-          <td>p1 Pcs Pkd/p</td>
-          <td></td>
-          <td>
-            <button class="add-to-cart"
-                    data-name="58 Giant"
-                    data-variant=""
-                    data-price="50.0">
-              <i class="fa fa-cart-plus"></i> Add to Cart
-            </button>
-          </td>
-        </tr>
-        </table>
-
+            <tr>
+              <td><img src="images/Wala5000.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Wala</td>
+              <td>3000.0</td>
+              <td>1500.0</td>
+              <td>1 Pcs Box</td>
+              <td>5000</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Wala" data-variant="5000" data-price="1500.0"
+                    onclick="updateQty('Wala','5000',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Wala-5000" type="text" value="0" data-price="1500.0"
+                       oninput="validateQty(this,'Wala','5000')" >
+                <button class="add add-to-cart" data-name="Wala" data-variant="5000" data-price="1500.0"
+                    onclick="updateQty('Wala','5000',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Wala-5000">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Wala100.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Wala</td>
+              <td>100.0</td>
+              <td>50.0</td>
+              <td>1 Pcs Box</td>
+              <td>100</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Wala" data-variant="100" data-price="50.0"
+                    onclick="updateQty('Wala','100',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Wala-100" type="text" value="0" data-price="50.0"
+                       oninput="validateQty(this,'Wala','100')" >
+                <button class="add add-to-cart" data-name="Wala" data-variant="100" data-price="50.0"
+                    onclick="updateQty('Wala','100',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Wala-100">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Wala2000.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Wala</td>
+              <td>1400.0</td>
+              <td>700.0</td>
+              <td>1 Pcs Box</td>
+              <td>2000</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Wala" data-variant="2000" data-price="700.0"
+                    onclick="updateQty('Wala','2000',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Wala-2000" type="text" value="0" data-price="700.0"
+                       oninput="validateQty(this,'Wala','2000')" >
+                <button class="add add-to-cart" data-name="Wala" data-variant="2000" data-price="700.0"
+                    onclick="updateQty('Wala','2000',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Wala-2000">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/Wala1000.png" style="max-width:30px; max-height:40px;"></td>
+              <td>Wala</td>
+              <td>700.0</td>
+              <td>350.0</td>
+              <td>1 Pcs Box</td>
+              <td>1000</td>
+              <td>
+                <button class="minus remove-from-cart" data-name="Wala" data-variant="1000" data-price="350.0"
+                    onclick="updateQty('Wala','1000',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-Wala-1000" type="text" value="0" data-price="350.0"
+                       oninput="validateQty(this,'Wala','1000')" >
+                <button class="add add-to-cart" data-name="Wala" data-variant="1000" data-price="350.0"
+                    onclick="updateQty('Wala','1000',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-Wala-1000">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/24 Deluxe.png" style="max-width:30px; max-height:40px;"></td>
+              <td>24 Deluxe</td>
+              <td>100.0</td>
+              <td>50.0</td>
+              <td>p1 Pcs Pkd/p</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="24 Deluxe" data-variant="" data-price="50.0"
+                    onclick="updateQty('24 Deluxe','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-24_Deluxe-" type="text" value="0" data-price="50.0"
+                       oninput="validateQty(this,'24 Deluxe','')" >
+                <button class="add add-to-cart" data-name="24 Deluxe" data-variant="" data-price="50.0"
+                    onclick="updateQty('24 Deluxe','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-24_Deluxe-">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/28 Chorsa.png" style="max-width:30px; max-height:40px;"></td>
+              <td>28 Chorsa</td>
+              <td>30.0</td>
+              <td>15.0</td>
+              <td>p1 Pcs Pkd/p</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="28 Chorsa" data-variant="" data-price="15.0"
+                    onclick="updateQty('28 Chorsa','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-28_Chorsa-" type="text" value="0" data-price="15.0"
+                       oninput="validateQty(this,'28 Chorsa','')" >
+                <button class="add add-to-cart" data-name="28 Chorsa" data-variant="" data-price="15.0"
+                    onclick="updateQty('28 Chorsa','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-28_Chorsa-">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/28 Giant.png" style="max-width:30px; max-height:40px;"></td>
+              <td>28 Giant</td>
+              <td>60.0</td>
+              <td>30.0</td>
+              <td>p1 Pcs Pkd/p</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="28 Giant" data-variant="" data-price="30.0"
+                    onclick="updateQty('28 Giant','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-28_Giant-" type="text" value="0" data-price="30.0"
+                       oninput="validateQty(this,'28 Giant','')" >
+                <button class="add add-to-cart" data-name="28 Giant" data-variant="" data-price="30.0"
+                    onclick="updateQty('28 Giant','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-28_Giant-">0.00</td>
+            </tr>
+            
+            <tr>
+              <td><img src="images/58 Giant.png" style="max-width:30px; max-height:40px;"></td>
+              <td>58 Giant</td>
+              <td>100.0</td>
+              <td>50.0</td>
+              <td>p1 Pcs Pkd/p</td>
+              <td></td>
+              <td>
+                <button class="minus remove-from-cart" data-name="58 Giant" data-variant="" data-price="50.0"
+                    onclick="updateQty('58 Giant','',-1)" style="background:red;color:white;"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                <input class="num-pallets-input" id="qty-58_Giant-" type="text" value="0" data-price="50.0"
+                       oninput="validateQty(this,'58 Giant','')" >
+                <button class="add add-to-cart" data-name="58 Giant" data-variant="" data-price="50.0"
+                    onclick="updateQty('58 Giant','',1)" style="background:green;color:white;"><i class="fa fa-plus" aria-hidden="true"></i></button>
+              </td>
+              <td id="total-58_Giant-">0.00</td>
+            </tr>
+            
+    <tfoot>
+      <tr>
+        <td colspan="7" style="text-align:right;font-weight:bold;">Grand Total:</td>
+        <td id="grand-total">0.00</td>
+      </tr>
+    </tfoot>
+    </table>
+    
 </section>
 
-<footer class="site-footer">
-  <div class="footer-nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
-  <p>&copy; 2026 Malaiyamman Traders. All rights reserved.</p>
-  <div class="footer-icons">
-    <a href="tel:+919843611870" class="contact-icon"><i class="fa-solid fa-mobile-screen-button"></i></a>
-    <a href="https://facebook.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://instagram.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
+<!-- Footer -->
+  <footer class="site-footer footbg footpad footlink">
+  <div class="container">
+    <div class="row">
+      
+      <!-- About -->
+      <div class="col-lg-4 col-md-4">
+        <h1 class="gilroy pb-2 heading2 clr text-white">Malaiyamman Traders</h1>
+        <p class="roboto text-white smallfnt">
+          Premium Crackers & Fireworks for every occasion. Wide range including Sparklers, Rockets, Flower Pots, and more.
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-lg-4 col-md-4">
+        <h1 class="gilroy pb-3 text-white heading2">Quick Links</h1>
+        <ul class="fullpad">
+          <li class="roboto pb-2"><a href="index.html" class="text-white clr"><i class="fa fa-angle-right"></i> Home</a></li>
+          <li class="roboto pb-2"><a href="about.html" class="text-white clr"><i class="fa fa-angle-right"></i> About</a></li>
+          <li class="roboto pb-2"><a href="products.html" class="text-white clr"><i class="fa fa-angle-right"></i> Products</a></li>
+          <li class="roboto pb-2"><a href="contact.html" class="text-white clr"><i class="fa fa-angle-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-4">
+        <h1 class="gilroy heading2 pb-2 clr text-white">Contact Us</h1>
+        <ul class="fullpad">
+          <li class="roboto pb-2">
+            <i class="fa fa-location-arrow text-white"></i>
+            <div class="text1 text-white">
+             1/4728/6, Rosalpatti, Thanga Mani Colony, Rosalpatti, Tamil Nadu 626001
+            </div>
+          </li>
+          <li class="roboto pb-2">
+            <i class="fa fa-whatsapp text-white"></i>
+            <div class="text1 para">
+              <a href="https://wa.me/919843611870" class="text-white">+91 9843611870</a>
+            </div>
+          </li>
+          <li class="roboto pb-2">
+            <i class="fa fa-envelope text-white"></i>
+            <div class="text1 para">
+              <a href="mailto:malaiyammantraders@gmail.com" class="text-white">malaiyammantraders@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </div> <!-- end row -->
+    
+    <!-- Bottom row -->
+    <div class="row">
+      <div class="col-md-6 pt-4">
+        <p class="roboto text-white">© 2026 Malaiyamman Traders – All rights reserved</p>
+      </div>
+      <div class="col-md-6 text-right pt-4" style="text-align: right;">
+        <i>Designed by <a href="#" target="_blank" style="color:#9e9e9e; text-decoration:none;">Malaiyamman Traders</a></i>
+      </div>
+    </div>
+    
   </div>
 </footer>
 
