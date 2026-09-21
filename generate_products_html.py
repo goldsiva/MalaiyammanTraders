@@ -42,7 +42,8 @@ output_dir = "."
 os.makedirs(output_dir, exist_ok=True)
 
 # --- Build categories menu ---
-categories = sorted(df["Product Category"].unique())
+# sorted
+categories = (df["Product Category"].unique())
 categories_menu = "<li><a href='#'>Categories</a><ul>\n"
 for cat in categories:
     filename = cat.lower().replace(" ", "") + ".html"
@@ -166,10 +167,10 @@ def generate_table(df):
       <th>Total</th>
     </tr>
     """
-    for category, group in df.groupby("Product Category"):
+    for category, group in df.groupby("Product Category", sort=False):
         table += f"""
         <tr>
-          <td colspan="8" style="text-align:center;font-weight:bold;background:#f0f0f0;">
+          <td colspan="8" style="text-align:center;font-weight:bold;background:#f0f0f0;color: brown;font-size: 25px;">
             {category}
           </td>
         </tr>
@@ -187,7 +188,7 @@ def generate_table(df):
             table += f"""
             <tr>
               <td><img src="images/{img_file}" style="max-width:30px; max-height:40px;"></td>
-              <td>{name}</td>
+              <td class="product-name">{name}</td>
               <td>{row.get('MRP','')}</td>
               <td>{price}</td>
               <td>{desc}</td>

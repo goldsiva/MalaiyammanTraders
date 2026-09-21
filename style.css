@@ -870,3 +870,7 @@ p {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+.product-name{
+  font-weight: bold;
+}
