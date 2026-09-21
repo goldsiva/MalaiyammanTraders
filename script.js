@@ -465,6 +465,39 @@ document.querySelectorAll('.remove-from-cart').forEach(btn => {
 
  restoreCartToGrid();
 
+const popup = document.getElementById("image-popup");
+const popupImg = document.getElementById("popup-img");
+const popupCaption = document.getElementById("popup-caption");
+const closeBtn = popup.querySelector(".close");
+
+// Attach click event to all product images
+document.querySelectorAll(".product-table img").forEach(img => {
+  img.addEventListener("click", () => {
+    popup.style.display = "flex";   // show popup
+    popupImg.src = img.src;         // set clicked image
+
+    // Get product name + variant from the same row
+    const row = img.closest("tr");
+    const name = row.querySelector("td:nth-child(2)").innerText;
+    const variant = row.querySelector("td:nth-child(6)").innerText;
+    popupCaption.textContent = `${name} ${variant}`;
+  });
+});
+
+// Close popup
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+// Close when clicking outside
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+});
+
+
+
 });
 
 // Export order to Excel
@@ -634,3 +667,5 @@ document.getElementById("phone").addEventListener("input", function () {
 document.getElementById("zip").addEventListener("input", function () {
   this.value = this.value.replace(/\D/g, ""); // remove non-digits
 });
+
+

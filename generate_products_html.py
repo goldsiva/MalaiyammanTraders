@@ -180,7 +180,8 @@ def generate_table(df):
             variant = row.get('Size','')
             desc = row.get('Product Description','')
             price = row.get('Selling Price','0')
-            img_file = f"{name}{variant}.png"
+            order = row.get('Order','0')
+            img_file = f"{order}.png"
 
             safe_name = make_id_safe(name)
             safe_variant = make_id_safe(variant)
@@ -248,6 +249,14 @@ main_html = f"""
 </section>
 {footer_html}
 {shared_js}
+<!-- Image Popup -->
+<div id="image-popup" class="image-popup">
+  <span class="close">&times;</span>
+  <div class="popup-content">
+    <img id="popup-img" src="" alt="Product Image">
+    <div id="popup-caption" class="popup-caption"></div>
+  </div>
+</div>
 </body>
 <div id="toast-container"></div>
 </html>
