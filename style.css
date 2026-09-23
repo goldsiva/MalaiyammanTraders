@@ -12,7 +12,8 @@ header {
 }
 
 nav {
-  background: #333;
+  background: #198754; 
+  /* #8B5E3C; */
 }
 
 nav ul {
@@ -111,14 +112,22 @@ nav ul li ul li a:hover {
 }
 
 .header-right {
-  display: flex;
-  gap: 15px;
-  align-items: center;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    float: right;
+    font-size: large;
+    color: #131010;
+    font-weight: bold;
+    /* background: conic-gradient(from 45deg, red, orange, yellow, green, teal, blue, purple); */
+    background: conic-gradient(from 45deg, red, orange, yellow, violet, purple);
+    border-radius: 15px;
+    padding: 5px;
 }
 
 .contact-icon {
   font-size: 22px;
-  color: white;
+  color: #8b5e3c;
   text-decoration: none;
 }
 
@@ -163,7 +172,7 @@ nav ul li ul li a:hover {
 }
 
 .cart-summary:hover {
-  color: #ffd700;
+  color: black;
 }
 
 .product-table {
@@ -179,7 +188,7 @@ nav ul li ul li a:hover {
 }
 
 .product-table th {
-  background: #8B5E3C;
+  background: #3c538b;;
   color: white;
   cursor: pointer;
 }
@@ -262,7 +271,7 @@ nav ul li ul li a:hover {
 }
 
 .cart-table th {
-  background: #8B5E3C;
+  background: #3c538b;
   color: white;
 }
 
@@ -688,7 +697,7 @@ nav ul li ul li a:hover {
     border-radius: 6px;
     color: #000 !important;
     height: 32px;
-    width: 40px;
+    width: 50px;
     text-align: center;
 }
 
@@ -800,7 +809,7 @@ p {
 .open-banner {
   overflow: hidden;
   white-space: nowrap;
-  background: #ff0000;
+  background: #596c5a;
   color: #fff;
   font-size: 2.2rem;
   font-weight: bold;
@@ -919,3 +928,67 @@ p {
   justify-content: center;
   gap: 5px;
 }
+
+.align-self-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+}
+
+.phone {
+    float: right;
+    width: 282px;
+    height: 70px;
+    margin: 15px 10px 15px 10px !important;
+}
+
+.phone {
+    float: right;
+    width: 282px;
+    height: 70px;
+    margin: 25px 10px 25px 10px;
+    display: table;
+    background: url(png.png) no-repeat;
+    border-left: transparent;
+    }
+
+    .phone p {
+    left: -25px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    color: #8B0000;
+    font-size: 14px;
+}
+
+.phone span {
+    vertical-align: middle;
+    display: table-cell;
+    color: #292929;
+    font-size: 13px;
+}
+
+.roboto {
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 16px !important;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    line-height: 28px;
+}
+
+a.contact-icon {
+    margin: 10px;
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+.gilroy {
+    font-family: 'gilroy';
+    letter-spacing: 1px;
+    color: #8b5e3c;
+}
+
