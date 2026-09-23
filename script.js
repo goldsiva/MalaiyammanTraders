@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <div style="display:block; text-align:center;">
     
     
-        <button onClick="download()" class="continue-btn downloadEstimate"><i class="fa fa-download"></i> Download Estimate</button>
+        <button id="downloadEstimateBtn" class="continue-btn downloadEstimate"><i class="fa fa-download"></i> Download Estimate</button>
         
     
 </div>
@@ -384,6 +384,13 @@ Name :  Gowri Sankar
         // document.getElementById('cart-items').innerHTML = "<tr><td colspan='6'>Your cart is now empty.</td></tr>";
         //showToast("Cart cleared successfully", "info");
       //});
+
+      document.getElementById('downloadEstimateBtn').addEventListener('click', () => {        
+        // Export to PDF
+        exportOrderToPDF(details, cart);
+        showToast("Downloaded Estimate successfully", "info");
+      });
+
     });
   }
 
@@ -584,6 +591,7 @@ doc.autoTable({
     doc.text("Malaiyamman Traders – Crackers & Fireworks", 85, 28, { align: "center" });
     doc.text("123 Market Street, Trivandrum, Kerala", 85, 34, { align: "center" });
     doc.text("Phone: +91-9843611870", 85, 40, { align: "center" });
+    doc.text("https://malaiyammantraders.com/", 85, 46, { align: "center" });
 
     // --- Customer details (right) ---
     doc.setFontSize(11);
@@ -597,7 +605,23 @@ doc.autoTable({
 custLinesRaw.forEach((line, i) => {
   const wrapped = doc.splitTextToSize(line, 80); // 80px width for right column
   wrapped.forEach((wLine, j) => {
-    doc.text(wLine, 190, 28 + (i * 6) + (j * 6), { align: "right" });
+    if (i === 0) {
+      // First line = "Customer Details:"
+      doc.setFont("helvetica", "bold");      // bold
+      doc.setFontSize(12);
+      doc.text(wLine, 190, 28 + (i * 6) + (j * 6), { align: "right" });
+
+      // underline: draw a line under the text
+      const textWidth = doc.getTextWidth(wLine);
+      const xRight = 190;
+      const yLine = 28 + (i * 6) + (j * 6) + 1.5;
+      doc.line(xRight - textWidth, yLine, xRight, yLine);
+
+      // reset font back to normal for other lines
+      doc.setFont("helvetica", "normal");
+    } else {
+      doc.text(wLine, 190, 28 + (i * 6) + (j * 6), { align: "right" });
+    }
   });
 });
 
