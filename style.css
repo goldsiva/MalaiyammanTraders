@@ -913,3 +913,9 @@ p {
   cursor: pointer;
 }
 
+.product-table td:nth-child(7) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
