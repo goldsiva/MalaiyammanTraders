@@ -181,7 +181,7 @@ def generate_table(df):
             desc = row.get('Product Description','')
             price = row.get('Selling Price','0')
             order = row.get('Order','0')
-            img_file = f"{order}.png"
+            img_file = f"{order}.jpg"
 
             safe_name = make_id_safe(name)
             safe_variant = make_id_safe(variant)
@@ -288,6 +288,14 @@ for category, group in df.groupby("Product Category"):
 </section>
 {footer_html}
 {shared_js}
+<!-- Image Popup -->
+<div id="image-popup" class="image-popup">
+  <span class="close">&times;</span>
+  <div class="popup-content">
+    <img id="popup-img" src="" alt="Product Image">
+    <div id="popup-caption" class="popup-caption"></div>
+  </div>
+</div>
 <div id="toast-container"></div>
 </body>
 </html>
