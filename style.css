@@ -12,7 +12,7 @@ header {
 }
 
 nav {
-  background: #198754; 
+  background: #931038;
   /* #8B5E3C; */
 }
 
@@ -42,7 +42,7 @@ nav ul li a:hover {
 }
 
 section {
-  padding: 20px;
+  padding: 10px;
 }
 
 footer {
@@ -484,7 +484,9 @@ nav ul li ul li a:hover {
   text-align: center;
   /*padding: 100px 20px;*/
   border-bottom: 5px solid #D4AF37;
-  margin: -20px 20px;
+  margin: 5px 10px;
+  height:800px;
+  width:1500px;
 }
 
 .hero-content {
@@ -506,6 +508,25 @@ nav ul li ul li a:hover {
 
 .hero h1 {
   font-size: 2.5rem;
+}
+
+.hero-banner {
+  background-image: url('fireworks-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  /* Sets a comfortable mobile height */
+  height: 300px; 
+}
+
+/* On desktops and larger screens, switch to the ideal dimensions */
+@media (min-width: 768px) {
+  .hero-banner {
+    height: auto;
+    aspect-ratio: 1600 / 800;
+  }
 }
 
 .btn-shop {
@@ -583,7 +604,7 @@ nav ul li ul li a:hover {
 }
 
 .why-us {
-  background: #8B5E3C;
+  background: #931038;
   color: #fff;
   padding: 40px 20px;
 }
@@ -809,11 +830,11 @@ p {
 .open-banner {
   overflow: hidden;
   white-space: nowrap;
-  background: #596c5a;
-  color: #fff;
+  /* background: #ef5c89; */
+  color: #931038;
   font-size: 2.2rem;
   font-weight: bold;
-  padding: 12px;
+  /* padding: 12px; */
   position: relative;
 }
 
