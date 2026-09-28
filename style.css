@@ -123,11 +123,12 @@ nav ul li ul li a:hover {
     background: conic-gradient(from 45deg, red, orange, yellow, violet, purple);
     border-radius: 15px;
     padding: 5px;
+    margin-top: 55px;
 }
 
 .contact-icon {
   font-size: 22px;
-  color: #8b5e3c;
+  color: #931038;
   text-decoration: none;
 }
 
@@ -963,7 +964,7 @@ p {
 }
 
 .phone {
-    float: right;
+    float: left;
     width: 282px;
     height: 70px;
     margin: 25px 10px 25px 10px;
@@ -1013,3 +1014,6 @@ a.contact-icon {
     color: #8b5e3c;
 }
 
+.d-flex {    
+    float: right;
+}
