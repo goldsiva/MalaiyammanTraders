@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 5px 10px !important;
 }
 
 header {
@@ -116,7 +116,7 @@ nav ul li ul li a:hover {
     gap: 15px;
     align-items: center;
     float: right;
-    font-size: large;
+    font-size: 16px;
     color: #131010;
     font-weight: bold;
     /* background: conic-gradient(from 45deg, red, orange, yellow, green, teal, blue, purple); */
@@ -635,7 +635,7 @@ nav ul li ul li a:hover {
 .about-section {
   background-size: 200px 200px;
   color: #333;
-  padding: 60px 20px;
+  padding: 10px 0px;
 }
 
 .about-content {
@@ -671,7 +671,7 @@ nav ul li ul li a:hover {
   justify-content: space-between;
   align-items: flex-start;
   gap: 30px;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   margin: auto;
 }
 

@@ -55,7 +55,7 @@ nav_html = f"""
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
-    <li><a href="products.html"><span class="blink_text">Estimate Now</span></a></li>
+    <li><a href="products.html"><span class="blink_text">Products</span></a></li>
     <li><a href="contact.html">Contact Us</a></li>
     {categories_menu}
   </ul>
@@ -67,7 +67,7 @@ header_html = """
 <div class="open-banner">
   <p>🕒 Our shop is open <strong>24/7 – 365 days</strong> for sale!</p>
 </div>
-<div class="container-fluid px-lg-5 d-none d-lg-block" style="padding-top:5px; padding-bottom:5px;">
+<div class="" style="padding-top:5px; padding-bottom:5px;">
 	<div class="row">
 	    
 
@@ -96,7 +96,7 @@ header_html = """
 			    		<div class="col-lg-4 col-md-6 align-self-center">
 
 			<a href="index.html">
-				<img src="logo.png" class="img-fluid logos mx-auto d-block" alt="Malaiyamman Traders" title="Malaiyamman Traders" style="width:30%;">
+				<img src="logo.jpg" class="img-fluid logos mx-auto d-block" alt="Malaiyamman Traders" title="Malaiyamman Traders" style="width:30%;">
 			</a>
 		</div>
 		
@@ -162,7 +162,7 @@ footer_html = """
           <li class="roboto pb-2">
             <i class="fa fa-envelope text-white"></i>
             <div class="text1 para">
-              <a href="mailto:malaiyammantraders@gmail.com" class="text-white">malaiyammantraders@gmail.com</a>
+              <a href="mailto:malaiyammantraders1000@gmail.com" class="text-white">malaiyammantraders1000@gmail.com</a>
             </div>
           </li>
         </ul>
@@ -275,7 +275,7 @@ main_html = f"""
 {header_html}
 {nav_html}
 <section>
-<h2>Explore Our Categories</h2>
+<h2>Explore Our Products</h2>
 
 {generate_table(df)}
 </section>
