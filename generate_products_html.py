@@ -15,7 +15,7 @@ def clean_numeric(val):
 def clean_text(val):
     if pd.isna(val):
         return ""
-    return re.sub(r"[^\w\s\-\(\)/]", "", str(val)).strip()
+    return re.sub(r"[^\w\s\-\(\)/.]", "", str(val)).strip()
 
 # --- Safe ID generator ---
 def make_id_safe(text):
