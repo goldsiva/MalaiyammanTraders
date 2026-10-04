@@ -331,8 +331,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="row" style="margin-top:20px;">
 <div class="col-md-4">
-     <div style="background-color:#005d28; padding:20px;" id="bb">
-<div style="background-color:yellow; line-height:30px; padding:20px; text-align:center; font-weight:600">
+     <div id="bb">
+<div style="background-color:#8b5e3c; color:white;border-radius: 50px; line-height:30px; padding:20px; text-align:center; font-weight:600">
 <u>Bank Account Info</u> <br>
 
 Name : Gowri Sankar <br>
@@ -346,8 +346,8 @@ Branch : Allampatti, Virudhunagar<br>
 </div> 
 
 <div class="col-md-4">
-    <div style="background-color:#005d28; padding:20px;" id="bb">
-<div style="background-color:yellow; line-height:30px; padding:20px; text-align:center;  font-weight:600">
+    <div  id="bb">
+<div style="background-color:#8b5e3c; color:white;border-radius: 50px; line-height:30px; padding:20px; text-align:center;  font-weight:600">
 
 <u>Google Pay</u> 
 <br> Phone No :  9843611870  <br>
@@ -357,8 +357,8 @@ Name : Gowri Sankar
 </div>
 
 <div class="col-md-4">
-<div style="background-color:#005d28; padding:20px;" id="bb">
-<div style="background-color:yellow; line-height:30px; padding:20px; text-align:center; font-weight:600">
+<div id="bb">
+<div style="background-color:#8b5e3c; color:white;border-radius: 50px; line-height:30px; padding:20px; text-align:center; font-weight:600">
 
 <u>Phone Pay</u> 
 <br> Phone No : 9843611870 <br>
