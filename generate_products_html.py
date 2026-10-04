@@ -56,7 +56,7 @@ nav_html = f"""
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
     <li><a href="products.html"><span class="blink_text">Products</span></a></li>
-    <li><a href="paymentmethods.html">Payment Methods</a></li>
+    <li><a href="PaymentMethods.html">Payment Methods</a></li>
     <li><a href="contact.html">Contact Us</a></li>
     {categories_menu}
   </ul>
