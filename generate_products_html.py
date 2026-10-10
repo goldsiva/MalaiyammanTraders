@@ -79,7 +79,7 @@ header_html = """
               </a>
               <a href="tel:+919843611870" class="contact-icon"><i class="fa-solid fa-mobile-screen-button"></i></a>
         <a href="https://facebook.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://instagram.com/malaiyammantraders" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/malaiyamman_crackers" target="_blank" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
             
             </div>
         
