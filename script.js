@@ -330,42 +330,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 <div class="row" style="margin-top:20px;">
-<div class="col-md-4">
+<div class="col-md-6">
      <div id="bb">
 <div style="background-color:#8b5e3c; color:white;border-radius: 50px; line-height:30px; padding:20px; text-align:center; font-weight:600">
 <u>Bank Account Info</u> <br>
 
-Name : Gowri Sankar <br>
-Bank : Indian Bank<br> 
-AC No : xx  <br>
-IFSC : xx<br>
+<div style="text-align:left;">
+  Name   : MALAIYAMMAN TRADERS <br>
+Bank : Tamilnad Mercantile Bank<br> 
+AC No : 369150050800388  <br>
+IFSC : TMBL0000369<br>
 Branch : Allampatti, Virudhunagar<br>
-
+</div>
+<hr></hr>
+<div style="text-align:left;">
+  Name : Durai Gowri Sankar <br>
+Bank : Karur Vysya Bank<br> 
+AC No : 1237155000115725  <br>
+IFSC : KVBL0001237<br>
+Branch : Virudhunagar<br>
+</div>
 </div>
 </div>  
 </div> 
 
-<div class="col-md-4">
-    <div  id="bb">
+<div class="col-md-6">
+    <div id="bb">
 <div style="background-color:#8b5e3c; color:white;border-radius: 50px; line-height:30px; padding:20px; text-align:center;  font-weight:600">
 
-<u>Google Pay</u> 
+<div>
+  <u>Google Pay</u> 
 <br> Phone No :  9843611870  <br>
 Name : Gowri Sankar   
 </div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div id="bb">
-<div style="background-color:#8b5e3c; color:white;border-radius: 50px; line-height:30px; padding:20px; text-align:center; font-weight:600">
-
+<div>
+  <hr></hr>
 <u>Phone Pay</u> 
 <br> Phone No : 9843611870 <br>
-Name :  Gowri Sankar  
+Name :  Gowri Sankar 
 </div>
 </div>
 </div>
+</div>
+
 </div>
 
 
